@@ -1,6 +1,74 @@
 class BeatController < ApplicationController
   def index
-    render json: {root: 'beats', key: { key1: "value" }}
+    start_time = params[:start_time]
+    end_time = params[:end_time]
+    fully_processed_map
+    render json: {prabodh: {data: fully_processed_map[0], avgHeartRate: fully_processed_map[1], zone: fully_processed_map[2]} }
+  end
+
+  def consolidate_daily_summaries
+    min_start_time = dailySummaries.map { |x| x["startTimeInSeconds"] }.min
+    heartRateOffsets = {}
+    dailySummaries.each do |summary|
+      summary["timeOffsetHeartRateSamples"].keys.each do |time_offset|
+        heartRateOffsets[summary["startTimeInSeconds"] + time_offset.to_i] = summary["timeOffsetHeartRateSamples"][time_offset]
+      end
+    end
+    heartRateOffsets
+  end
+
+  def epoch_summaries_map
+    epoch_map = {}
+    epochSummaries.each do |x|
+      if x["activeTimeInSeconds"] == 900
+        epoch_map[x["startTimeInSeconds"]] = [x["intensity"]]
+      else
+        epoch_map[x["startTimeInSeconds"]] = epochSummaries.select { |p| p["startTimeInSeconds"] == x["startTimeInSeconds"]}.map { |k| k["intensity"]}
+      end
+    end
+    epoch_map
+  end
+
+  def zone_hash
+    {
+      "SEDENTARY"=> 3,
+      "ACTIVE"=> 2,
+      "HIGHLY_ACTIVE"=> 1
+    }
+  end
+
+  def heart_rate_hash(heart_rate)
+    if heart_rate.between?(0, 100)
+      return 1
+    elsif heart_rate.between?(100, 150)
+      return 2
+    else
+      return 3
+    end
+  end
+
+  def fully_processed_map
+    epoch_map = epoch_summaries_map
+    heartrate_map = consolidate_daily_summaries
+    final_map = []
+    start_time = 1490587200
+    end_time = 1490673600
+    counter_time = start_time
+    avg_heart_rate = 0
+    heartrate_map.keys.sort.each do |counter_time|
+      avg_heart_rate += heartrate_map[counter_time]
+      final_map << {x: counter_time - start_time, y: heartrate_map[counter_time] || nil, activity: epoch_map[start_time + 900 * ((counter_time - start_time)/900)]}
+    end
+    avg_heart_rate = (avg_heart_rate / final_map.length)
+
+    zone = 0
+    count = 0
+    final_map.each do |point|
+      zone += (point[:activity].inject(0){ |sum, el| sum + zone_hash[el] }.to_f / point[:activity].size) * (heart_rate_hash(point[:y]))
+      count += 1
+    end
+
+    [final_map, avg_heart_rate, zone/count]
   end
 
   def dailySummaries

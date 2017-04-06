@@ -8,9 +8,6 @@ class SessionsController < ApplicationController
   def create
     access_token = request.env['omniauth.auth']['credentials']
     binding.pry
-    # facebook_app = ConnectedApp.where(name: 'facebook').first
-    # facebook_app.access_token = access_token
-    # facebook_app.save!
 
     redirect_to '/', status: 302
   end

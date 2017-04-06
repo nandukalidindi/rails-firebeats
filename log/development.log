@@ -1098,3 +1098,761 @@ Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
 Started GET "/beat" for ::1 at 2017-04-05 20:56:27 -0400
 Processing by BeatController#index as HTML
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 21:55:44 -0400
+
+SyntaxError (/Users/kaybus/Documents/nandukalidindi-github/rails-firebeats/app/controllers/beat_controller.rb:13: syntax error, unexpected ')'
+        heartRateOffsets[(summary["timeOffsetHeartRateSamples"] - )]
+                                                                   ^
+/Users/kaybus/Documents/nandukalidindi-github/rails-firebeats/app/controllers/beat_controller.rb:2430: syntax error, unexpected keyword_end, expecting ')'):
+  app/controllers/beat_controller.rb:13: syntax error, unexpected ')'
+  app/controllers/beat_controller.rb:2430: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.3ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 21:55:55 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `pry' for #<Binding:0x007f8e65764968>):
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.3ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 21:57:55 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 558933ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.6ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:07:14 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 2538ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.9ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:07:20 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 24474ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.9ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:07:46 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 225434ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.4ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:11:34 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `-' for #<Hash:0x007f805adfa958>):
+  app/controllers/beat_controller.rb:15:in `block (2 levels) in consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:14:in `each'
+  app/controllers/beat_controller.rb:14:in `block in consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:13:in `each'
+  app/controllers/beat_controller.rb:13:in `consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:35:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.8ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:12:44 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 42889ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:39:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.2ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:13:28 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 99651ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:14:in `block (2 levels) in consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:13:in `each'
+  app/controllers/beat_controller.rb:13:in `block in consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:12:in `each'
+  app/controllers/beat_controller.rb:12:in `consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:35:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.2ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:15:10 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 7532ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:14:in `block (2 levels) in consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:13:in `each'
+  app/controllers/beat_controller.rb:13:in `block in consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:12:in `each'
+  app/controllers/beat_controller.rb:12:in `consolidate_daily_summaries'
+  app/controllers/beat_controller.rb:35:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.7ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 22:15:20 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 2720630ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:39:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.9ms)
+
+
+Started GET "/auth/garmin/callback?oauth_token=b195b12c-a73f-4ece-be78-832f0e3bdc2a&oauth_verifier=dpPk7IUdU7" for ::1 at 2017-04-05 23:00:41 -0400
+Processing by SessionsController#setup as HTML
+  Parameters: {"oauth_token"=>"b195b12c-a73f-4ece-be78-832f0e3bdc2a", "oauth_verifier"=>"dpPk7IUdU7"}
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.5.1) lib/oauth/consumer.rb:217:in `token_request'
+  oauth (0.5.1) lib/oauth/tokens/request_token.rb:20:in `get_access_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:56:in `callback_phase'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:230:in `callback_call'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:187:in `call!'
+  omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+  omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/kaybus/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/kaybus/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/kaybus/.rvm/rubies/ruby-2.2.6/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.3ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:00:41 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 881677ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:39:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.8ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:15:25 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/controllers/beat_controller.rb:41:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.4ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:15:39 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 191597ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:43:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.7ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:23:08 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 495842ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:43:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.6ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:35:50 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 153119ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:43:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.2ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:38:27 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 656973ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:43:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.4ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:49:28 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 80174ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:42:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.8ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:50:48 -0400
+Processing by BeatController#index as HTML
+Completed 200 OK in 52ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-05 23:50:56 -0400
+Processing by BeatController#index as HTML
+Completed 200 OK in 56ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:05:01 -0400
+
+SyntaxError (/Users/kaybus/Documents/nandukalidindi-github/rails-firebeats/app/controllers/beat_controller.rb:7: syntax error, unexpected keyword_end, expecting '}'
+/Users/kaybus/Documents/nandukalidindi-github/rails-firebeats/app/controllers/beat_controller.rb:2491: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/beat_controller.rb:7: syntax error, unexpected keyword_end, expecting '}'
+  app/controllers/beat_controller.rb:2491: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.7ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:05:38 -0400
+
+SyntaxError (/Users/kaybus/Documents/nandukalidindi-github/rails-firebeats/app/controllers/beat_controller.rb:7: syntax error, unexpected keyword_end, expecting '}'
+/Users/kaybus/Documents/nandukalidindi-github/rails-firebeats/app/controllers/beat_controller.rb:2486: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/beat_controller.rb:7: syntax error, unexpected keyword_end, expecting '}'
+  app/controllers/beat_controller.rb:2486: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.8ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:05:59 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/beat_controller.rb:40:in `heart_rate_hash'
+  app/controllers/beat_controller.rb:67:in `block in fully_processed_map'
+  app/controllers/beat_controller.rb:66:in `each'
+  app/controllers/beat_controller.rb:66:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.5ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:06:14 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/controllers/beat_controller.rb:67:in `+'
+  app/controllers/beat_controller.rb:67:in `block (2 levels) in fully_processed_map'
+  app/controllers/beat_controller.rb:67:in `each'
+  app/controllers/beat_controller.rb:67:in `inject'
+  app/controllers/beat_controller.rb:67:in `block in fully_processed_map'
+  app/controllers/beat_controller.rb:66:in `each'
+  app/controllers/beat_controller.rb:66:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.5ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:06:35 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 125991ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:67:in `block in fully_processed_map'
+  app/controllers/beat_controller.rb:66:in `each'
+  app/controllers/beat_controller.rb:66:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.4ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:08:52 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/controllers/beat_controller.rb:68:in `+'
+  app/controllers/beat_controller.rb:68:in `block (2 levels) in fully_processed_map'
+  app/controllers/beat_controller.rb:68:in `each'
+  app/controllers/beat_controller.rb:68:in `inject'
+  app/controllers/beat_controller.rb:68:in `block in fully_processed_map'
+  app/controllers/beat_controller.rb:66:in `each'
+  app/controllers/beat_controller.rb:66:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.2ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:09:20 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `between' for 102:Fixnum):
+  app/controllers/beat_controller.rb:43:in `heart_rate_hash'
+  app/controllers/beat_controller.rb:68:in `block in fully_processed_map'
+  app/controllers/beat_controller.rb:66:in `each'
+  app/controllers/beat_controller.rb:66:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.3ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:09:39 -0400
+Processing by BeatController#index as HTML
+Completed 200 OK in 93ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:10:12 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/controllers/beat_controller.rb:68:in `+'
+  app/controllers/beat_controller.rb:68:in `block (2 levels) in fully_processed_map'
+  app/controllers/beat_controller.rb:68:in `each'
+  app/controllers/beat_controller.rb:68:in `inject'
+  app/controllers/beat_controller.rb:68:in `block in fully_processed_map'
+  app/controllers/beat_controller.rb:66:in `each'
+  app/controllers/beat_controller.rb:66:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.2ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.8ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:10:42 -0400
+Processing by BeatController#index as HTML
+Completed 500 Internal Server Error in 93092ms (ActiveRecord: 0.0ms)
+
+SystemExit (exit):
+  app/controllers/beat_controller.rb:71:in `rescue in block in fully_processed_map'
+  app/controllers/beat_controller.rb:68:in `block in fully_processed_map'
+  app/controllers/beat_controller.rb:66:in `each'
+  app/controllers/beat_controller.rb:66:in `fully_processed_map'
+  app/controllers/beat_controller.rb:5:in `index'
+
+
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.8ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.1ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/kaybus/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.1ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:12:24 -0400
+Processing by BeatController#index as HTML
+Completed 200 OK in 97ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beat" for ::1 at 2017-04-06 00:12:43 -0400
+Processing by BeatController#index as HTML
+Completed 200 OK in 127ms (Views: 52.6ms | ActiveRecord: 0.0ms)

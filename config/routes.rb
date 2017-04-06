@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'beat' => 'beat#index'
+
   root 'application#home'
-  
+
   get '/auth/garmin/setup' => 'sessions#setup'
   get '/auth/garmin/callback' => 'sessions#create'
   # The priority is based upon order of creation: first created -> highest priority.
